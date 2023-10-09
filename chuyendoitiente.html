@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+     <input type="text" id="nhap">
+
+ <h4>From currency</h4>
+    <select id="a">
+        <option value="1">VN</option>
+        <option value="24000">USD</option>
+    </select>
+<h4> To currency</h4>
+    <select id="b">
+        <option value="1">VN</option>
+        <option value="24000">USD</option>
+    </select>
+     <br>
+     <br>
+     <button onclick="x()">Convert</button>
+<p id="mu"></p>
+</body>
+
+<script>
+ function x() {
+     let tien = document.getElementById('nhap').value
+     let from = document.getElementById('a').value
+     let to = document.getElementById('b').value
+
+     document.getElementById('mu').innerHTML=tien*from/to
+
+ }
+</script>
+</html>
